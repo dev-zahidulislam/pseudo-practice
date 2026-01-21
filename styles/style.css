@@ -10,6 +10,14 @@ body {
   padding-bottom: 100px;
 }
 
+/* sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: #e0f2fe;
+  width: 100%;
+}
+
 /* start pseudo class */
 .container {
   max-width: 800px;
@@ -68,6 +76,7 @@ h2 {
 /* start positioning */
 
 .positioning-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +90,7 @@ h2 {
   text-align: center;
   margin: 20px;
   border: 1px solid lch(61.66% 59.87 273.43);
+  position: a;
 }
 
 .card p {
@@ -88,7 +98,7 @@ h2 {
 }
 
 .card {
-  position: relative;
+  position:;
   height: 200px;
   width: 200px;
 }
@@ -98,7 +108,7 @@ h2 {
   border-radius: 50%;
   position: absolute;
   color: white;
-  top: -10px;
+  top: 20px;
   left: 150px;
   width: 50px;
 }
@@ -150,3 +160,15 @@ h2 {
 }
 
 /* end z-index */
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  border: 3px solid #73ad21;
+}
+
+.after-before p::after {
+  content: ur;
+}

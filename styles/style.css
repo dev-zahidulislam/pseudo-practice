@@ -10,6 +10,7 @@ body {
   padding-bottom: 100px;
 }
 
+/* start pseudo class */
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -39,21 +40,67 @@ h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
 }
 
-.list-container li:first-child{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #d1fae5;
+.list-container li:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d1fae5;
 }
 
-.list-container li:nth-child(even){
-    color: red;
+.list-container li:nth-child(even) {
+  color: red;
 }
 
-.list-container li:nth-child(3){
-    text-decoration: underline;
+.list-container li:nth-child(3) {
+  text-decoration: underline;
 }
 
-.list-container li:last-child{
-    background-color: #fee2e2;
-    border-bottom: 1px solid red;
+.list-container li:last-child {
+  background-color: #fee2e2;
+  border-bottom: 1px solid red;
 }
+
+.list-container li:nth-child(4n + 1) {
+  color: blue;
+}
+
+/* end pseudo class */
+
+/* start positioning */
+
+.positioning-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.card {
+  background-color: #e0f2fe;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid lch(61.66% 59.87 273.43);
+}
+
+.card p {
+  padding-top: 40%;
+}
+
+.card {
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+.badge {
+  background-color: rebeccapurple;
+  border-radius: 50%;
+  position: absolute;
+  color: white;
+  top: -10px;
+  left: 150px;
+  width: 50px;
+}
+
+/* end positioning */

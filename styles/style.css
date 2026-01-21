@@ -104,3 +104,49 @@ h2 {
 }
 
 /* end positioning */
+
+/* start z-index */
+.z-index {
+  position: relative;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.box {
+  position: absolute;
+  /* background-color: #d1fae5; */
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.box1 {
+  background-color: #ef4444;
+  top: 70px;
+  left: 31px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: #3b82f6;
+  top: 98px;
+  left: 58px;
+  z-index: 3;
+}
+
+.box3 {
+  background-color: #fbbf24;
+  top: 129px;
+  left: 89px;
+  z-index: 2;
+  color: black;
+}
+
+/* end z-index */
